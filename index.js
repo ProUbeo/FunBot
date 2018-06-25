@@ -54,11 +54,27 @@ if (hug == 3){
     .setImage("http://i.imgur.com/27gNd4G.gif")
     message.channel.send({embed})
 }
+if(hug == 4){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://media3.giphy.com/media/8tpiC1JAYVMFq/giphy.webp")
+    message.channel.send({embed})
+}
+ if(hug == 5){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://media.giphy.com/media/VGACXbkf0AeGs/giphy.webp")
+    message.channel.send({embed})
+}
 }
 }
 )
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(3)
+    max = Math.floor(5)
    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
