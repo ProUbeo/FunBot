@@ -27,7 +27,7 @@ member.guild.channels.find("name", "général").send(`Bienvenue ${member} sur le
 if(message.content.startsWith("a_test")){
     message.channel.send(`**${message.author.username}** fait apparaître un test avec succéés !`)
 }
-if(message.content.tartsWith("a_hug")){
+if(message.content.startsWith("a_hug")){
     random();
     if (hug == 1){
         message.channel.send("", {
