@@ -31,7 +31,7 @@ if(message.content.startsWith("a_hug")){
     random();
     if (hug == 1){
             const embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** fais un câlin à ${message.mentions}`)
+            .setTitle(`**${message.author.username}** fais un câlin à ${message.mentions.users.first().username}`)
             .setColor(0x66c2ff)
             .setThumbnail("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
         
