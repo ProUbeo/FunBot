@@ -30,9 +30,13 @@ if(message.content.startsWith("a_test")){
 if(message.content.startsWith("a_hug")){
     random();
     if (hug == 1){
-        message.channel.send("", {
-            file: "https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif"
-        })}
+            const embed = new Discord.RichEmbed()
+            .setTitle(`**${message.author.username}** fais un câlin à ${message.mentions.users.first().username}`)
+            .setColor(0x66c2ff)
+            .setThumbnail("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+        
+            message.channel.send({embed})
+        }
         if (hug == 2){
             message.channel.send("", {
                 file: "https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif"
@@ -46,6 +50,6 @@ message.channel.send("", {
 )
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(3)
+    max = Math.floor(1)
    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
