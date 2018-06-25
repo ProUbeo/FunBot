@@ -59,7 +59,7 @@ if(hug == 4){
     .setTitle(``)
     .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
     .setColor(0x66c2ff)
-    .setImage("https://media3.giphy.com/media/8tpiC1JAYVMFq/giphy.webp")
+    .setImage("https://i.giphy.com/media/8tpiC1JAYVMFq/giphy.webp")
     message.channel.send({embed})
 }
  if(hug == 5){
@@ -67,7 +67,7 @@ if(hug == 4){
     .setTitle(``)
     .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
     .setColor(0x66c2ff)
-    .setImage("https://media.giphy.com/media/VGACXbkf0AeGs/giphy.webp")
+    .setImage("https://i.giphy.com/media/VGACXbkf0AeGs/giphy.webp")
     message.channel.send({embed})
 }
 }
