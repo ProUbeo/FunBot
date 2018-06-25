@@ -32,7 +32,7 @@ if(message.content.startsWith("a_hug")){
     if (hug == 1){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${author.id}** fais un câlin à ${message.mentions.users.first()}`)
+            .setDescription(`**${user}** fais un câlin à ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
             message.channel.send({embed})
