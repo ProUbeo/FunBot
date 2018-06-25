@@ -27,5 +27,25 @@ member.guild.channels.find("name", "général").send(`Bienvenue ${member} sur le
 if(message.content.startsWith("a_test")){
     message.channel.send(`**${message.author.username}** fait apparaître un test avec succéés !`)
 }
+if(message.content.startsWith("a_hug")){
+    random();
+    if (hug == 1){
+        message.channel.send("", {
+            file: "https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif"
+        })}
+        if (hug == 2){
+            message.channel.send("", {
+                file: "https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif"
+            })}
+if (hug == 3){
+message.channel.send("", {
+   file: "http://i.imgur.com/27gNd4G.gif"
+   })}
+}
 }
 )
+function random(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+   hug = Math.floor(Math.random() * (max - min +1) + min);
+ }
