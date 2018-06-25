@@ -31,10 +31,10 @@ if(message.content.startsWith("a_hug")){
     random();
     if (hug == 1){
             const embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** fais un câlin à ${message.mentions.users.first()}`)
+            .setTitle(``)
+            .setDescription(`**${message.author.username}** fais un câlin à ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
-            .setThumbnail("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
-        
+            .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
             message.channel.send({embed})
         }
         if (hug == 2){
