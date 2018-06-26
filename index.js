@@ -102,6 +102,33 @@ if(hug == 4){
     message.channel.send({embed})
 }
 }
+if(message.content.startsWith("a_kill")){
+    random();
+    if (kill == 1){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
+            message.channel.send({embed})
+        }
+        if (kill == 2){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://data.whicdn.com/images/277094600/original.gif")
+            message.channel.send({embed})
+        }
+        if (kill == 3){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://i.makeagif.com/media/5-04-2015/FQmUz2.gif")
+            message.channel.send({embed})
+        }
+    }
 if (message.content.startsWith("a_sondage")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
@@ -118,8 +145,15 @@ message.react("✔")
 }
 }
 )
+
 function random(min, max) {
     min = Math.ceil(0)
     max = Math.floor(5)
    hug = Math.floor(Math.random() * (max - min +1) + min);
+ }
+
+ function random(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+   kill = Math.floor(Math.random() * (max - min +1) + min);
  }
