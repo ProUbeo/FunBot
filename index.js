@@ -102,22 +102,13 @@ if(message.content.startsWith(prefix + "kill")){
             message.channel.send({embed})
         }
 }
-if(message.content.startsWith(prefix + "hug")){
-    random();
-    if (hug == 1){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        
-        message.channel.send({embed})
-}
-if (hug == 2){
+if(message.content.startsWith("a_hug")){
+if (jpp_de_ma_vie == 1){
     const embed = new Discord.RichEmbed()
     .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
     .setColor(0x66c2ff)
-    
+    .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
     message.channel.send({embed})
 }
 }
@@ -126,8 +117,8 @@ if (hug == 2){
 
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(2)
-   hug = Math.floor(Math.random() * (max - min +1) + min);
+    max = Math.floor(1)
+   jpp_de_ma_vie = Math.floor(Math.random() * (max - min +1) + min);
  }
 
  function random(min, max) {
