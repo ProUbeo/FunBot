@@ -130,11 +130,6 @@ if(message.content.startsWith("a_kill")){
         }
     }
 
-    if(message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("pouf !");
-    if(args[0]) return message.channel.send("pouf !")
-    message.channel.bulkDelete(args[0]).then(() => {
-    message.channel.send(`${args0} messages ont été supprimés !`).then(msg => msg.delete(5000));
-    })
 if (message.content.startsWith("a_sondage")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
