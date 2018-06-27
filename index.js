@@ -152,6 +152,6 @@ if (hug == 2){
  }
  function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
-    max = Math.floor(10)
+    max = Math.floor(5)
     hug = Math.floor(Math.random() * (max - min +1) + min);
  }
