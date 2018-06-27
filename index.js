@@ -75,33 +75,33 @@ message.react("✔")
     }).catch(function() {
     });
 }
-if (message.content === prefix + "hug"){
+if(message.content.startsWith(prefix + "kill")){
     random();
-    if (hug == 1){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
-        message.channel.send({embed})
+    if (kill == 1){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
+            message.channel.send({embed})
+        }
+        if (kill == 2){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://data.whicdn.com/images/277094600/original.gif")
+            message.channel.send({embed})
+        }
+        if (kill == 3){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://i.makeagif.com/media/5-04-2015/FQmUz2.gif")
+            message.channel.send({embed})
+        }
     }
-    if (hug == 2){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
-        message.channel.send({embed})
-    }     
-if (hug == 3){
-const embed = new Discord.RichEmbed()
-.setTitle(``)
-.setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-.setColor(0x66c2ff)
-.setImage("http://i.imgur.com/27gNd4G.gif")
-message.channel.send({embed})
-}
-}
 }
 )
 
