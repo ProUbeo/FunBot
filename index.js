@@ -109,7 +109,7 @@ if(message.content.startsWith(prefix + "hug")){
         .setTitle(``)
         .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
         .setColor(0x66c2ff)
-        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+        
         message.channel.send({embed})
 }
 if (hug == 2){
@@ -117,7 +117,7 @@ if (hug == 2){
     .setTitle(``)
     .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
     .setColor(0x66c2ff)
-    .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+    
     message.channel.send({embed})
 }
 }
