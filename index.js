@@ -100,52 +100,55 @@ if(message.content.startsWith(prefix + "kill")){
             message.channel.send({embed})
         }
 }
-if (message.content === "sigbot!ASDF Movie"){
+if (message.content === prefix + "hug"){
     random();
-    if (ASDF == 1){
+    if (hug == 1){
         message.channel.send("", {
             file: "https://media1.tenor.com/images/1e5ea63a7ff58de29efd66799e10bf9a/tenor.gif"
         })
 }
-if (ASDF == 2){
+if (hug == 2){
     message.channel.send("", {
         file: "http://garfie.g.a.pic.centerblog.net/b290ac08.gif"
     })
-}   if (ASDF == 3){
+}   if (hug == 3){
     message.channel.send("", {
         file: "http://gifimage.net/wp-content/uploads/2017/09/asdf-movie-gif-7.gif"
     })
-}   if (ASDF == 4){
+}   if (hug == 4){
     message.channel.send("", {
         file: "https://media.giphy.com/media/XKnvIs2ELq7du/giphy.gif"
     })
-}   if (ASDF == 5){
+}   if (hug == 5){
     message.channel.send("", {
         file: "https://media1.tenor.com/images/b5c745a817f0ef09a827bb48d83526be/tenor.gif"
     })}  
-     if (ASDF == 6){
+     if (hug == 6){
     message.channel.send("", {
         file: "https://vignette.wikia.nocookie.net/asdfmovie/images/7/73/You_Know_Who%27s_Gay%3F.gif/revision/latest?cb=20140307001053"
     })
-}   if (ASDF == 7){
+}   if (hug == 7){
     message.channel.send("", {
         file: "https://i.imgur.com/5cL1Ld6.gif"
     })
-}   if (ASDF == 8){
+}   if (hug == 8){
     message.channel.send("", {
         file: "https://i.pinimg.com/originals/6a/85/dd/6a85dd96d535832c22d5d5d34620615c.gif"
     })
-}   if (ASDF == 9){
+}   if (hug == 9){
     message.channel.send("", {
         file: "https://i.pinimg.com/originals/c8/e2/29/c8e22909763d09c9ff31924ca150ac27.gif"
     })
-}   if (ASDF == 10){
+}   if (hug == 10){
     message.channel.send("", {
         file: "https://i.imgur.com/P7BBAXh.gif"
     })
-}}
+}
+}
 }
 )
+//sakamoto-san est encore passer par la car le créateur de ce bot arriver pas a le faire tout seul 
+// SORRY but i can do this =_=
  function random(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
@@ -154,5 +157,5 @@ if (ASDF == 2){
  function random(min, max) {
     min = Math.ceil(0)// 0 est impossible a avoir
     max = Math.floor(10)
-    ASDF = Math.floor(Math.random() * (max - min +1) + min);
+    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
