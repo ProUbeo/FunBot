@@ -59,49 +59,49 @@ if(message.content.startsWith("a_test")){
     message.channel.send(`**${message.author.username}** fait apparaître un test avec succéés !`)
 }
 if(message.content.startsWith("a_hug")){
-    if (random(1,5) == 1){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
-        message.channel.send({embed})
-    }
-    if (random(1,5)  == 2){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
-        message.channel.send({embed})
-    }  
-      
-if (random(1,5) == 3){
-const embed = new Discord.RichEmbed()
-.setTitle(``)
-.setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-.setColor(0x66c2ff)
-.setImage("http://i.imgur.com/27gNd4G.gif")
-message.channel.send({embed})
+    random();
+        if (hug == 1){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+            message.channel.send({embed})
+        }
+        if (hug == 2){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+            message.channel.send({embed})
+        }  
+          
+if (hug == 3){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("http://i.imgur.com/27gNd4G.gif")
+    message.channel.send({embed})
 }
-if(random(1,5) == 4){
-const embed = new Discord.RichEmbed()
-.setTitle(``)
-.setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-.setColor(0x66c2ff)
-.setImage("https://i.pinimg.com/originals/f9/e9/34/f9e934cddfd6fefe0079ab559ef32ab4.gif")
-message.channel.send({embed})
+if(hug == 4){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.pinimg.com/originals/f9/e9/34/f9e934cddfd6fefe0079ab559ef32ab4.gif")
+    message.channel.send({embed})
 }
-if(random(1,5) == 5){
-const embed = new Discord.RichEmbed()
-.setTitle(``)
-.setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-.setColor(0x66c2ff)
-.setImage("https://i.4pcdn.org/s4s/1516080224529.gif")
-message.channel.send({embed})
+ if(hug == 5){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.4pcdn.org/s4s/1516080224529.gif")
+    message.channel.send({embed})
 }
 }
-
 if(message.content.startsWith("a_kill")){
     random();
     if (kill == 1){
@@ -150,7 +150,7 @@ message.react("✔")
 function random(min, max) {
     min = Math.ceil(1)
     max = Math.floor(5)
-   return Math.floor(Math.random() * (max - min +1) + min);
+   hug = Math.floor(Math.random() * (max - min +1) + min);
  }
 
  function random(min, max) {
