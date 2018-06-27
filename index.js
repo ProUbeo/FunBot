@@ -129,6 +129,13 @@ if(message.content.startsWith("a_kill")){
             message.channel.send({embed})
         }
     }
+    if (message.content.startsWith("a_clear")){
+        if (message.member.hasPermission("MANAGE_MESSAGE")){
+        message.channel.fetchMessage()
+        .then(function(list){
+        message.channel.bulkDelete(list);
+        }, function(err){message.channel.send("Une erreur sauvage apparait !")})}}
+
 if (message.content.startsWith("a_sondage")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
