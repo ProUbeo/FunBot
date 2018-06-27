@@ -103,46 +103,42 @@ if(message.content.startsWith(prefix + "kill")){
 if (message.content === prefix + "hug"){
     random();
     if (hug == 1){
-        message.channel.send("", {
-            file: "https://media1.tenor.com/images/1e5ea63a7ff58de29efd66799e10bf9a/tenor.gif"
-        })
-}
+        const embed = new Discord.RichEmbed()
+        .setTitle(``)
+        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+        .setColor(0x66c2ff)
+        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+        message.channel.send({embed})
+        }
 if (hug == 2){
-    message.channel.send("", {
-        file: "http://garfie.g.a.pic.centerblog.net/b290ac08.gif"
-    })
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+    message.channel.send({embed})
+
 }   if (hug == 3){
-    message.channel.send("", {
-        file: "http://gifimage.net/wp-content/uploads/2017/09/asdf-movie-gif-7.gif"
-    })
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("http://i.imgur.com/27gNd4G.gif")
+    message.channel.send({embed})
 }   if (hug == 4){
-    message.channel.send("", {
-        file: "https://media.giphy.com/media/XKnvIs2ELq7du/giphy.gif"
-    })
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.pinimg.com/originals/f9/e9/34/f9e934cddfd6fefe0079ab559ef32ab4.gif")
+    message.channel.send({embed})
 }   if (hug == 5){
-    message.channel.send("", {
-        file: "https://media1.tenor.com/images/b5c745a817f0ef09a827bb48d83526be/tenor.gif"
-    })}  
-     if (hug == 6){
-    message.channel.send("", {
-        file: "https://vignette.wikia.nocookie.net/asdfmovie/images/7/73/You_Know_Who%27s_Gay%3F.gif/revision/latest?cb=20140307001053"
-    })
-}   if (hug == 7){
-    message.channel.send("", {
-        file: "https://i.imgur.com/5cL1Ld6.gif"
-    })
-}   if (hug == 8){
-    message.channel.send("", {
-        file: "https://i.pinimg.com/originals/6a/85/dd/6a85dd96d535832c22d5d5d34620615c.gif"
-    })
-}   if (hug == 9){
-    message.channel.send("", {
-        file: "https://i.pinimg.com/originals/c8/e2/29/c8e22909763d09c9ff31924ca150ac27.gif"
-    })
-}   if (hug == 10){
-    message.channel.send("", {
-        file: "https://i.imgur.com/P7BBAXh.gif"
-    })
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.4pcdn.org/s4s/1516080224529.gif")
+    message.channel.send({embed})
 }
 }
 }
