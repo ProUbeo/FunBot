@@ -58,33 +58,6 @@ member.guild.channels.find("name", "général").send(`Bienvenue ${member} sur le
 if(message.content.startsWith("a_test")){
     message.channel.send(`**${message.author.username}** fait apparaître un test avec succéés !`)
 }
-if(message.content.startsWith("a_hug")){
-    random();
-        if (hug == 1){
-            const embed = new Discord.RichEmbed()
-            .setTitle(``)
-            .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-            .setColor(0x66c2ff)
-            .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
-            message.channel.send({embed})
-        }
-        if (hug == 2){
-            const embed = new Discord.RichEmbed()
-            .setTitle(``)
-            .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-            .setColor(0x66c2ff)
-            .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
-            message.channel.send({embed})
-        }        
-if (hug == 3){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("http://i.imgur.com/27gNd4G.gif")
-    message.channel.send({embed})
-}
-}
 if(message.content.startsWith("a_kill")){
     random();
     if (kill == 1){
