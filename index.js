@@ -58,6 +58,17 @@ member.guild.channels.find("name", "général").send(`Bienvenue ${member} sur le
 if(message.content.startsWith("a_test")){
     message.channel.send(`**${message.author.username}** fait apparaître un test avec succéés !`)
 }
+if (message.content === prefix + "hug"){
+    random();
+    if (hug == 1){
+        const embed = new Discord.RichEmbed()
+        .setTitle(``)
+        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+        .setColor(0x66c2ff)
+        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+        message.channel.send({embed})
+}
+}
 if(message.content.startsWith("a_kill")){
     random();
     if (kill == 1){
@@ -105,7 +116,7 @@ message.react("✔")
 
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(3)
+    max = Math.floor(1)
    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
 
