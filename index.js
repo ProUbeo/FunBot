@@ -103,7 +103,7 @@ if(message.content.startsWith(prefix + "kill")){
         }
 }
 if(message.content.startsWith("a_hug")){
-if (jpp_de_ma_vie == 1){
+if(hug == 1){
     const embed = new Discord.RichEmbed()
     .setTitle(``)
     .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
@@ -114,11 +114,10 @@ if (jpp_de_ma_vie == 1){
 }
 }
 )
-
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(1)
-   jpp_de_ma_vie = Math.floor(Math.random() * (max - min +1) + min);
+    max = Math.floor(3)
+   hug = Math.floor(Math.random() * (max - min +1) + min);
  }
 
  function random(min, max) {
