@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-const client = new Discord.Client();
 
 const adapter = new FileSync('database.json');
 const db = low(adapter);
@@ -11,7 +10,6 @@ const db = low(adapter);
 db.defaults({ histoires: [],  xp: []}).write()
  
  var prefix = ("a_")
- var randnum = 0;
  
  bot.on('ready', function() {
      bot.user.setUsername("FunBot")
@@ -102,24 +100,8 @@ if(message.content.startsWith(prefix + "kill")){
             message.channel.send({embed})
         }
 }
-if(message.content.startsWith("a_hug")){
-if(hug == 1){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
-    message.channel.send({embed})
-}
-}
 }
 )
-function random(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-   hug = Math.floor(Math.random() * (max - min +1) + min);
- }
-
  function random(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
