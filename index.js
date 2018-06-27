@@ -101,13 +101,32 @@ if(message.content.startsWith(prefix + "kill")){
             .setImage("https://i.makeagif.com/media/5-04-2015/FQmUz2.gif")
             message.channel.send({embed})
         }
-    }
+}
+if(message.content.startsWith(prefix + "hug")){
+    random();
+    if (hug == 1){
+        const embed = new Discord.RichEmbed()
+        .setTitle(``)
+        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+        .setColor(0x66c2ff)
+        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
+        message.channel.send({embed})
+}
+if (hug == 2){
+    const embed = new Discord.RichEmbed()
+    .setTitle(``)
+    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
+    .setColor(0x66c2ff)
+    .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+    message.channel.send({embed})
+}
+}
 }
 )
 
 function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(3)
+    max = Math.floor(2)
    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
 
