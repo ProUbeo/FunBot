@@ -148,13 +148,13 @@ message.react("✔")
 )
 
 function random(min, max) {
-    min = Math.ceil(1)
+    min = Math.ceil(0)
     max = Math.floor(5)
    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
 
  function random(min, max) {
-    min = Math.ceil(1)
+    min = Math.ceil(0)
     max = Math.floor(3)
    kill = Math.floor(Math.random() * (max - min +1) + min);
  }
