@@ -12,7 +12,7 @@ db.defaults({ histoires: [],  xp: []}).write()
  var prefix = ("a_")
  
  bot.on('ready', function() {
-     bot.user.setUsername("FunBot")
+     bot.user.setUsername("Clicker")
      bot.user.setPresence({ game: { name: 'Se mazouter le poireau de modération !'}, status: 'dnd'}) //en ligne;
      console.log("Connected")
  });
