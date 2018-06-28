@@ -13,7 +13,7 @@ db.defaults({ histoires: [],  xp: []}).write()
  
  bot.on('ready', function() {
      bot.user.setUsername("FunBot")
-     bot.user.setPresence({ game: { name: 'Procurer du fun'}, status: 'dnd'}) //en ligne;
+     bot.user.setPresence({ game: { name: 'Se mazouter le poireau de modération !'}, status: 'dnd'}) //en ligne;
      console.log("Connected")
  });
  
@@ -30,9 +30,14 @@ member.guild.channels.find("name", "general").send(`Bienvenue ${member} sur le s
  
 
  bot.on('message', message => {
-    if (message.content === prefix + "ServeurListe"){
-        message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
-        }
+
+    if (message.content.startsWith(prefix + "help")){
+        var embed = new Discord.RichEmbed()
+        .addField("**Transition**", "Voici les Commandes Disponibles !")
+        .addField("```actions```", "```a_calin @mention\na_ tue @mention```")
+        .setColor(0x66c2ff)
+        message.channel.send(embed)
+    }
 
     var msgauthor = message.author.id;
     if (message.author.bot)return;
