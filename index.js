@@ -68,8 +68,8 @@ if (message.content.startsWith(prefix + "sondage")){
     .setColor(0x66c2ff)
     message.channel.send(embed)
     .then(function (message) {
-message.react("❌")
-message.react("✔")    
+message.react("✔")
+message.react("❌")    
     }).catch(function() {
     });
 }
