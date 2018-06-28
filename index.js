@@ -75,7 +75,7 @@ message.react("✔")
 }
 if(message.content.startsWith(prefix + "tue")){
     random();
-    if (random == 1){
+    if (test == 1){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
@@ -83,7 +83,7 @@ if(message.content.startsWith(prefix + "tue")){
             .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
             message.channel.send({embed})
         }
-        if (random == 2){
+        if (test == 2){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
@@ -91,7 +91,7 @@ if(message.content.startsWith(prefix + "tue")){
             .setImage("https://data.whicdn.com/images/277094600/original.gif")
             message.channel.send({embed})
         }
-        if (random == 3){
+        if (test == 3){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
@@ -103,7 +103,7 @@ if(message.content.startsWith(prefix + "tue")){
 
 if(message.content.startsWith(prefix + "calin")){
     random();
-    if (random == 1){
+    if (test == 1){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** fait un calin à ${message.mentions.users.first()}`)
@@ -111,7 +111,7 @@ if(message.content.startsWith(prefix + "calin")){
             .setImage("https://media1.giphy.com/media/143v0Z4767T15e/giphy.gif")
             message.channel.send({embed})
         }
-        if (random == 2){
+        if (test == 2){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** fait un calin à ${message.mentions.users.first()}`)
@@ -119,7 +119,7 @@ if(message.content.startsWith(prefix + "calin")){
             .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
             message.channel.send({embed})
         }
-        if (random == 3){
+        if (test == 3){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
             .setDescription(`**${message.author}** fait un calin à ${message.mentions.users.first()}`)
@@ -135,5 +135,5 @@ if(message.content.startsWith(prefix + "calin")){
  function random(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
-   random = Math.floor(Math.random() * (max - min +1) + min);
+    test = Math.floor(Math.random() * (max - min +1) + min);
  }
