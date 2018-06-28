@@ -100,58 +100,12 @@ if(message.content.startsWith(prefix + "kill")){
             message.channel.send({embed})
         }
 }
-if (message.content === prefix + "hug"){
-    random();
-    if (hug == 1){
-        const embed = new Discord.RichEmbed()
-        .setTitle(``)
-        .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-        .setColor(0x66c2ff)
-        .setImage("https://media.giphy.com/media/l2QDM9Jnim1YVILXa/giphy.gif")
-        message.channel.send({embed})
-        }
-if (hug == 2){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
-    message.channel.send({embed})
 
-}   if (hug == 3){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("http://i.imgur.com/27gNd4G.gif")
-    message.channel.send({embed})
-}   if (hug == 4){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("https://i.pinimg.com/originals/f9/e9/34/f9e934cddfd6fefe0079ab559ef32ab4.gif")
-    message.channel.send({embed})
-}   if (hug == 5){
-    const embed = new Discord.RichEmbed()
-    .setTitle(``)
-    .setDescription(`**${message.author}** fais un câlin à ${message.mentions.users.first()}`)
-    .setColor(0x66c2ff)
-    .setImage("https://i.4pcdn.org/s4s/1516080224529.gif")
-    message.channel.send({embed})
-}
-}
 }
 )
-//sakamoto-san est encore passer par la car le créateur de ce bot arriver pas a le faire tout seul 
-// SORRY but i can do this =_=
+
  function random(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
    kill = Math.floor(Math.random() * (max - min +1) + min);
- }
- function random(min, max) {
-    min = Math.ceil(0)// 0 est impossible a avoir
-    max = Math.floor(5)
-    hug = Math.floor(Math.random() * (max - min +1) + min);
  }
