@@ -34,7 +34,7 @@ member.guild.channels.find("name", "general").send(`Bienvenue ${member} sur le s
     if (message.content.startsWith(prefix + "help")){
         var embed = new Discord.RichEmbed()
         .addField("**Transition**", "Voici les Commandes Disponibles !")
-        .addField("```actions```", "```a_calin @mention\na_ tue @mention```")
+        .addField("```actions```", "```a_calin @mention\na_tue @mention\na_claque @mention```")
         .setColor(0x66c2ff)
         message.channel.send(embed)
     }
