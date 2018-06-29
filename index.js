@@ -213,7 +213,7 @@ if(message.content.startsWith(prefix + "embrasse")){
     if (test == 1){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setDescription(`**${message.author}** embrasse ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("https://media.giphy.com/media/FmB6UTdCj3G12/giphy.gif")
             message.channel.send({embed})
@@ -221,7 +221,7 @@ if(message.content.startsWith(prefix + "embrasse")){
         if (test == 2){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setDescription(`**${message.author}** embrasse ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("https://media.giphy.com/media/mGAzm47irxEpG/giphy.gif")
             message.channel.send({embed})
@@ -229,7 +229,7 @@ if(message.content.startsWith(prefix + "embrasse")){
         if (test == 3){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setDescription(`**${message.author}** embrasse ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("http://aws-cf.ados.fr/prod/photos/9/1/6/8040916/4532954/img-4532954f7e.gif?v=16")
             message.channel.send({embed})
@@ -237,7 +237,7 @@ if(message.content.startsWith(prefix + "embrasse")){
         if (test == 4){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setDescription(`**${message.author}** embrasse ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("https://media.giphy.com/media/FmB6UTdCj3G12/giphy.gif")
             message.channel.send({embed})
@@ -245,7 +245,7 @@ if(message.content.startsWith(prefix + "embrasse")){
         if (test == 5){
             const embed = new Discord.RichEmbed()
             .setTitle(``)
-            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setDescription(`**${message.author}** embrasse ${message.mentions.users.first()}`)
             .setColor(0x66c2ff)
             .setImage("https://media.giphy.com/media/mGAzm47irxEpG/giphy.gif")
             message.channel.send({embed})
