@@ -104,6 +104,22 @@ if(message.content.startsWith(prefix + "tue")){
             .setImage("https://i.makeagif.com/media/5-04-2015/FQmUz2.gif")
             message.channel.send({embed})
         }
+        if (test == 4){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("http://gifimage.net/wp-content/uploads/2017/09/anime-kill-gif.gif")
+            message.channel.send({embed})
+        }
+        if (test == 5){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** Tue ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://data.whicdn.com/images/277094600/original.gif")
+            message.channel.send({embed})
+        }
 }
 
 if(message.content.startsWith(prefix + "calin")){
@@ -132,13 +148,71 @@ if(message.content.startsWith(prefix + "calin")){
             .setImage("http://gifimage.net/wp-content/uploads/2017/10/hug-anime-gif-9.gif")
             message.channel.send({embed})
         }
+        if (test == 4){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** fait un calin à ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://media1.giphy.com/media/143v0Z4767T15e/giphy.gif")
+            message.channel.send({embed})
+        }
+        if (test == 5){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** fait un calin à ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+            message.channel.send({embed})
+        }
 }
-
+if(message.content.startsWith(prefix + "claque")){
+    random();
+    if (test == 1){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/c/cd/Slap.gif.gif/revision/latest?cb=20130131011837")
+            message.channel.send({embed})
+        }
+        if (test == 2){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif")
+            message.channel.send({embed})
+        }
+        if (test == 3){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://i.pinimg.com/originals/55/a5/00/55a500fdf173b915bcba57bcbd2dd12e.gif")
+            message.channel.send({embed})
+        }
+        if (test == 4){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/c/cd/Slap.gif.gif/revision/latest?cb=20130131011837")
+            message.channel.send({embed})
+        }
+        if (test == 5){
+            const embed = new Discord.RichEmbed()
+            .setTitle(``)
+            .setDescription(`**${message.author}** claque ${message.mentions.users.first()}`)
+            .setColor(0x66c2ff)
+            .setImage("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif")
+            message.channel.send({embed})
+        }
+}
 }
 )
 
  function random(min, max) {
     min = Math.ceil(0)
-    max = Math.floor(3)
+    max = Math.floor(5)
     test = Math.floor(Math.random() * (max - min +1) + min);
  }
