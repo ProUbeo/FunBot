@@ -21,10 +21,10 @@ db.defaults({ histoires: [],  xp: []}).write()
  
  bot.on("guildMemberAdd", member => {
     
-member.guild.channels.find("name", "general").send(`Bienvenue ${member} sur le serveur ${message.guild.name}`)
+member.guild.channels.find("name", "bienvenue-au-revoir").send(`Bienvenue ${member} sur le serveur ${message.guild.name}`)
     })
     bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "general").send(`${member} est parti... Au moins on s'amusera entre nous, sans lui ^^`)
+    member.guild.channels.find("name", "bienvenue-au-revoir").send(`${member.username} est parti... Au moins on s'amusera entre nous, sans lui ^^`)
     })
     
  
