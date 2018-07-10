@@ -36,6 +36,7 @@ member.guild.channels.find("name", "bienvenue-au-revoir").send(`Bienvenue ${memb
         .addField("**Transition**", "Voici les Commandes Disponibles !")
         .addField("```actions```", "```a_calin @mention\na_tue @mention\na_claque @mention\na_embrasse @mention```")
         .setColor(0x66c2ff)
+        .addField("```Admin```", "```a_warn @mention raison\na_dit message```")
         message.channel.send(embed)
     }
 
