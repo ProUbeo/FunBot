@@ -123,6 +123,23 @@ if(message.content.startsWith(prefix + "tue")){
         }
 }
 
+if(message.content.startsWith(prefix + "warn")) {
+
+    if(message.mentions.users.first()){
+
+    let messageToSend = message.content.split(" ").slice(2).join(" ");
+    let userToSend = message.mentions.users.first();
+
+    userToSend.send(`Tu as reçu un avertissement de ${message.author.username}!\n${messageToSend}`);
+    message.delete();
+    message.channel.send(`warn envoyer`)
+}else{
+message.delete();
+message.channel.send(`erreur`)
+
+}
+}
+
 if(message.content.startsWith(prefix + "calin")){
     random();
     if (test == 1){
