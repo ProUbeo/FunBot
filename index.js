@@ -130,7 +130,7 @@ if(message.content.startsWith(prefix + "warn")) {
     let messageToSend = message.content.split(" ").slice(2).join(" ");
     let userToSend = message.mentions.users.first();
 
-    userToSend.send(`Tu as reçu un avertissement de ${message.author.username}!\n${messageToSend}`);
+    userToSend.send(`Tu as reçu un avertissement de ${message.author.username}!\nraison : ${messageToSend}`);
     message.delete();
     message.channel.send(`warn envoyer`)
 }else{
