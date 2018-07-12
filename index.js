@@ -132,7 +132,7 @@ if(message.content.startsWith(prefix + "warn")) {
 
     userToSend.send(`Tu as reçu un avertissement de ${message.author.username}!\nraison : ${messageToSend}`);
     message.delete();
-    message.channel.send(`warn envoyer`)
+    message.channel.send(`Warn envoyer`)
 }else{
 message.delete();
 message.channel.send(`erreur`)
