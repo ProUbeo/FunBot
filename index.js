@@ -13,7 +13,7 @@ db.defaults({ histoires: [],  xp: []}).write()
  
  bot.on('ready', function() {
      bot.user.setUsername("Clicker")
-     bot.user.setPresence({ game: { name: 'Se mazouter le poireau de modération !'}, status: 'dnd'}) //en ligne;
+     bot.user.setPresence({ game: { name: 'Modérer l'Antre des Gamers !'}, status: 'dnd'}) //en ligne;
      console.log("Connected")
  });
  
